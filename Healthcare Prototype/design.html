@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+  <title>Healthcare Design</title>
+  <script src="design.js" defer></script>
+  <script src="pushNotification.js" defer></script>
+
+  <link rel="stylesheet" type="text/css" href="design.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<style>
+  /* Style the popup box */
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Style the popup content */
+  .popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+</style>
+<body>
+  <header>
+    <h1>Healthcare Clinic</h1>
+    <nav>
+      <ul>
+        <!-- <p><a href="#" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Emphasis link</a></p> -->
+        <li><a href="#" class="link-body-emphasis link-offset-2 link-underline-opacity-100 link-underline-opacity-75-hover">Home</a></li>
+        <!-- <li><a href="#">Services</a></li> -->
+        <li>
+          <a onclick="openPopup()" class="link-body-emphasis link-offset-2 link-underline-opacity-100 link-underline-opacity-75-hover">About Us</a>
+
+          <!-- Popup box -->
+          <div id="popupBox" class="popup">
+            <div class="popup-content" style="color: black;">
+              <h3>About us</h3>
+              <p>This is a prototype website which helps elders to live better life by giving timely notifications about medicines daily.</p>
+              <button onclick="closePopup()">Close</button>
+            </div>
+          </div>
+        </li>
+        <!-- <li><a href="#">Contact</a></li> -->
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="banner">
+    <h2>Welcome to Our Healthcare Clinic</h2>
+    <p>Providing quality healthcare services for your well-being.</p>
+    <a href="#" class="btn btn-light" style="font-size: 1.2rem;">Get alerts</a>
+  </section>
+  
+  <section id="services">
+    <ul>
+      <li>
+        <!-- <img src="/images/healthcare.png" alt="images" class="healthCareImage" style="width: 100px;"> -->
+        <p>We offer timely notifications of medicines which benefits elders to live better life. Enter time in hours in below boxes and just tap on get alerts button</p>
+        </li>
+        <li style="display: flex; justify-content: center; align-items: center; padding: 0px 20px;">
+          <form action="#">
+            <input type="number" class="inpuData1" placeholder="Enter time in 24hr format" value="" id="time">
+            <input type="number" class="inpuData2" placeholder="Enter time in 24hr format" id="time">
+            <input type="number" class="inpuData3" placeholder="Enter time in 24hr format" id="time">
+            <input type="submit" name="" id="GetAlert" class="btn btn-outline-primary" value="Get Alerts" style="padding: 5px 10px; font-size: 1.2rem;margin-bottom: 5px;">
+          </form>
+        </li>
+    </ul>
+  </section>
+  
+ 
+  
+  <footer>
+    <p>&copy; 2023 Healthcare Clinic. All rights reserved.</p>
+  </footer>
+</body>
+</html>

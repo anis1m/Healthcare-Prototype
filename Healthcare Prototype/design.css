@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+   /* Designing of Image  */
+
+
+  header {
+    background: linear-gradient(rgb(64, 64, 205,0.7),rgb(94, 133, 217,0.7));
+    /* opacity: 0.2; */
+    /* background-color: #003366; */
+    padding: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px 20px;
+  }
+  
+  nav ul {
+    /* list-style-type: none; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 1.4rem;
+
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  #banner {
+    background: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.7)),url(/images/healthcare.png);
+    /* background-image: url('/images/healthcare.png'); */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #ffffff;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  #services {
+    background-color: #f2f2f2;
+    padding: 50px;
+    height:470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #time{
+    padding: 10px 20px;
+    border: 0px;
+    font-size: 1.2rem;
+    margin: 0px 20px;
+
+  }
+  
+  #services ul {
+    list-style-type: none;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #services ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #services ul li img {
+    width: 60px;
+    margin-right: 20px;
+  }
+  
+  #about {
+    padding: 50px;
+  }
+  
+  footer {
+    background-color: #003366;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+ 
