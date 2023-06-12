@@ -24,7 +24,7 @@ sumbitData.addEventListener("click",()=>{
   else{
     alert("Notification will be recieved soon");
     const newArray = new Array(inputData1.value ,inputData2.value , inputData3.value );
-    const minutesArray = new Array(inputData1.value%100 ,inputData2.value%100 , inputData3.value%100);
+    const minutesArray = new Array(inputData1.value%1 ,inputData2.value%1 , inputData3.value%1);
     console.log(newArray);
     console.log(minutesArray);
       function notifyMe() {
@@ -33,18 +33,18 @@ sumbitData.addEventListener("click",()=>{
           // Set the time for the notification
           var targetTime = new Date();
           
-            targetTime.setHours(newArray[0]); // Set hour to 2 PM
-            targetTime.setMinutes(0); // Set minutes to 10
+            targetTime.setHours(Math.trunc(newArray[0])); // Set hour to 2 PM
+            targetTime.setMinutes(Math.trunc(minutesArray[0]*100)); // Set minutes to 10
             console.log(targetTime);
             var delay = targetTime.getTime() - Date.now();
             console.log(delay);
-            targetTime.setHours(newArray[1]); // Set hour to 2 PM
-            targetTime.setMinutes(0); // Set minutes to 10
+            targetTime.setHours(Math.trunc(newArray[0])); // Set hour to 2 PM
+            targetTime.setMinutes(Math.trunc(minutesArray[1]*100)); // Set minutes to 10
             console.log(targetTime);
             var delay1 = targetTime.getTime() - Date.now();
             console.log(delay1);
-            targetTime.setHours(newArray[2]); // Set hour to 2 PM
-            targetTime.setMinutes(0); // Set minutes to 10
+            targetTime.setHours(Math.trunc(newArray[0])); // Set hour to 2 PM
+            targetTime.setMinutes(Math.trunc(minutesArray[2]*100)); // Set minutes to 10
             console.log(targetTime);
             var delay2 = targetTime.getTime() - Date.now();
             console.log(delay2);
